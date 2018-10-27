@@ -1,0 +1,10 @@
+.vue-autocomplete .autocomplete-list {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: 1000;
+    padding-right: 30px;
+}
+.autocomplete-loader {
+    right: 23px !important;
+}

@@ -1,0 +1,273 @@
+.fixed-column, .materials-content {
+	position: relative;
+	min-height: 700px;
+}
+.table-outter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+  padding-right: 10px;
+}
+
+.fixed-column-outter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.table-outter table {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-collapse: collapse;
+  overflow: hidden;
+  /* Use this to create a "dead" area color if table is too wide for cells */
+  background-color: #fff;
+}
+
+.fixed-column-outter table {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-collapse: collapse;
+  overflow: hidden;
+  /* Use this to create a "dead" area color if table is too wide for cells */
+  background-color: #fff;
+}
+
+.table-outter thead {
+  /*
+  Grow thead automatically to fit content, don't shrink it
+  proportionately to the body.
+  */
+  
+  display: block;
+  /* x-scrolling will be managed via JS */
+  overflow-x: hidden;
+  /*
+  Keep header columns aligned with useless scrollbar.
+  For IE11, use "dead area" color to hide scrollbar functions
+  */
+  overflow-y: scroll;
+  scrollbar-base-color: #ccc;
+  scrollbar-face-color: #ccc;
+  scrollbar-highlight-color: #ccc;
+  scrollbar-track-color: #ccc;
+  scrollbar-arrow-color: #ccc;
+  scrollbar-shadow-color: #ccc;
+  scrollbar-dark-shadow-color: #ccc;
+  
+  min-height: 30px;
+}
+
+.fixed-column thead {
+	overflow: hidden;
+	min-height: 30px;
+}
+
+.fixed-column tbody {
+    overflow: scroll;
+    min-height: 30px;
+}
+
+/*
+For Webkit, use "dead area" color to hide scrollbar functions
+TODO: on Chrome/Safari for Mac, scrollbars are not shown anyway and
+this creates an extra block. No impact on iOS Safari.
+*/
+.table-outter thead::-webkit-scrollbar { display: block; background-color: #ccc; }
+.table-outter thead::-webkit-scrollbar-track { background-color: #ccc; }
+
+/* Scroll the actual tbody (second child on all browsers) */
+.table-outter tbody {
+  display: block;
+  overflow: scroll;
+}
+
+/* IE11 adds an extra tbody, have to hide it */
+.table-outter tbody:nth-child(3) { display: none; }
+
+/* The one caveat, a hard-set width is required. */
+.table-outter td, .table-outter th {
+  width: 150px;
+  min-width: 150px;
+  padding: 0.3em;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.fixed-column-outter td, .fixed-column-outter th {
+  padding: 0.3em;
+  border: 1px solid #ddd;
+  background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table-outter th, .fixed-column-outter th {
+  background-color: #f7f7f7;
+}
+
+.fixed-column-outter td, .table-outter td {
+	height: 42px;
+}
+
+.fixed-column-outter td:not(.material) {
+	padding-left: 30px;
+}
+
+.fixed-column-outter td.material {
+    cursor: pointer;
+}
+
+.fixed-column-outter input, .table-outter input {
+	height: 25px;
+	width: 100%;
+	padding-left: 0px !important;
+	border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.panel-heading {
+	padding-bottom: 0px;
+}
+
+ul.nav-tabs {
+	border-bottom: 0;
+}
+
+
+#summary .table-outter table {
+  border-top: 0;
+}
+
+#summary .fixed-column thead {
+  min-height: 99px;
+}
+
+#summary .summary_content_outter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+  padding-right: 10px;
+}
+
+#summary .summary_content_outter table {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  margin-bottom: 0px;  
+  border-collapse: collapse;
+  overflow: hidden;
+  /* Use this to create a "dead" area color if table is too wide for cells */
+  background-color: #fff;
+}
+
+#summary .summary_content_outter thead {
+  /*
+  Grow thead automatically to fit content, don't shrink it
+  proportionately to the body.
+  */
+  
+  display: block;
+  /* x-scrolling will be managed via JS */
+  overflow-x: scroll;
+  /*
+  Keep header columns aligned with useless scrollbar.
+  For IE11, use "dead area" color to hide scrollbar functions
+  */
+  overflow-y: scroll;
+  scrollbar-base-color: #ccc;
+  scrollbar-face-color: #ccc;
+  scrollbar-highlight-color: #ccc;
+  scrollbar-track-color: #ccc;
+  scrollbar-arrow-color: #ccc;
+  scrollbar-shadow-color: #ccc;
+  scrollbar-dark-shadow-color: #ccc;
+  
+  min-height: 30px;
+}
+
+#summary .summary_content_outter th{
+  padding: 0.3em;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  width: 150px;
+  min-width: 150px;
+}
+
+#summary .table-outter td,#summary .table-outter th {
+  width: 150px;
+  min-width: 150px;
+}
+
+#summary .table-outter {
+	height: 600px;
+}
+#summary .fixed-column tbody {
+    overflow: scroll;
+    max-height: 570px;
+}
+
+
+.modal-dialog
+{
+    width: 80%;
+    height: auto; /* control height here */
+}
+
+
+.khsx-vtp .summary_content_outter {
+	position: relative !important;
+	padding-bottom: 0;
+	padding-left: 15px;
+	padding-right: 0!important;
+}
+
+.khsx-vtp .table-outter {
+    position: relative !important;
+    margin-top: -31px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.khsx-vtp #summary .summary_content_outter th {
+	width: 12.5%;
+}
+
+.khsx-vtp #summary .summary_content_outter thead {
+	overflow-x: hidden !important;
+}
+
+.khsx-vtp .table-outter tbody {
+  overflow-x: hidden !important;
+}
+
+
+.table-outter thead, .summary_content_outter thead, .fixed-column-outter thead, .fixed-column-outter tbody span.name {
+    font-family: 'Helvetica Neue', 'Nunito', sans-serif !important;
+}
+
+.summary_material--input-data {
+	border: none;
+}

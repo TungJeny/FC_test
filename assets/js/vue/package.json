@@ -1,0 +1,19 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_undefined_.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "npm": "^5.8.0",
+    "v-uploader": "^1.6.0",
+    "vue-axios": "^2.1.1",
+    "vue-draggable": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

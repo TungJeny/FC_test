@@ -1,0 +1,11 @@
+.materials .nav-tabs>li>a {
+	border-radius: 0;
+}
+
+.tab-content {
+	padding-top: 10px;
+}
+
+.pointer {
+	cursor: pointer;
+}

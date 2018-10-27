@@ -1,0 +1,254 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #555;
+}
+
+.form-group .form-control, .control-label, .left-bar .menu-parent>li a,
+	.side-bar .menu-parent>li a, .register .register-items-form .item-form .input-group .add-item-input,
+	.register .register-items-form .item-form .input-group .selectize-input input,
+	.register .register-items-form .item-form .input-group #item, .top-bar .top-elements .dropdown .dropdown-menu a,
+	.modal .modal-content .modal-body, .btn, .ui-widget, .form-heading,
+	.piluku-tabs>li a {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.modal .modal-content .modal-header {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
+    font-size: 13px;
+}
+
+ul.locations-drop {
+	overflow-x: hidden !important;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.manage_buttons .buttons-list .dropdown-menu {
+	top: 60px;
+}
+
+.left-bar, .side-bar {
+	width: 250px;
+}
+
+.content {
+	margin-left: 250px;
+}
+
+#toggle-menu {
+	float: left;
+	height: 60px;
+	padding-top: 17px;
+	padding-left: 10px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.pagination-top a.active {
+	background: #5faaea;
+	color: #fff;
+}
+
+.pagination-top a {
+	font-size: 13px !important;
+}
+
+.vue-list-view .sorting {
+	background-image: url("images/sort_both.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+.vue-list-view .sorting_desc {
+	background-image: url("images/sort_desc.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+.vue-list-view .sorting_asc {
+	background-image: url("images/sort_asc.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+.top-bar .top-elements .dropdown .dropdown-menu.neat_drop .last_info {
+	text-align: left;
+}
+
+.left-bar {
+	background-color: #222;
+}
+
+.dashboard-stats .left h4, .table>thead>tr>th, .table>tbody>tr>th,
+	.table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
+	{
+	font-weight: normal;
+}
+
+.manage-row-options .email_buttons {
+	padding-left: 10px;
+}
+
+.manage_buttons .buttons-list {
+	padding-right: 10px;
+}
+
+.manage_buttons .buttons-list a {
+	margin-right: 0;
+}
+
+.manage_buttons .search {
+	margin-left: 10px;
+}
+
+.manage-row-options .email_buttons {
+	height: 79px;
+}
+
+.left-bar .menu-parent>li a, .side-bar .menu-parent>li a {
+	width: 250px;
+}
+
+#mainMenu .has-submenu .ti-angle-right, #mainMenu .has-submenu .ti-angle-down
+	{
+	font-size: 14px;
+	float: right;
+	padding-top: 13px;
+}
+
+#mainMenu li.level-1 a {
+	padding-left: 61px;
+}
+
+#mainMenu li.level-2 a {
+	padding-left: 80px;
+}
+
+#mainMenu li.sm-level-1 a {
+	padding-left: 61px;
+}
+
+#mainMenu li.sm-level-2 a {
+	padding-left: 80px;
+}
+
+#mainMenu .icon-submenu {
+	padding-right: 0;
+}
+
+.drag-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.drag-wrapper ul {
+	display: flex;
+	flex-direction: column;
+	padding: 3px !important;
+	min-height: 200px;
+	width: 50%;
+	float: left;
+	list-style-type: none;
+	overflow-y: auto;
+	border: 1px dashed #ddd;
+}
+
+.drag-wrapper ul:first-child {
+	margin-right: 5px;
+}
+
+/* draggable items */
+.drag-wrapper li {
+	display: block;
+	list-style-type: none;
+	margin: 0 0 2px 0;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.drag-wrapper .item-dropzone-area {
+	height: 30px;
+	background-color: #ffffff !important;
+	animation-duration: 0.5s;
+	animation-name: nodeInserted;
+}
+
+/* --- VUE loading --- */
+.vue-list-view {
+	position: relative;
+}
+
+.vue-list-view .mask {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 9999;
+	opacity: 0.8;
+}
+
+.vue-list-view .spinner {
+	width: 100px;
+	height: 50px;
+	top: 40%;
+}
+
+span.message {
+	color: red;
+	font-style: italic;
+}
+
+.vue-list-view .pagination {
+	padding-bottom: 10px;
+}
+
+.vue-datepicker {
+	margin-left: 10px;
+	margin-top: 20px;
+	float: left;
+}
+
+.vue-datepicker input {
+	height: 37px;
+}
+
+.hottable {
+	margin-top: 30px;
+}
+
+#page_loader {
+	background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10000;
+}
+
+#page_loader .spinner {
+	background-color: transparent;
+}

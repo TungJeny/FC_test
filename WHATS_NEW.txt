@@ -1,0 +1,96 @@
+15.1
+
+Whats new:
+
+* WooCommerce API integration
+* Added Price Rules - Bogo, ect.
+* New excel import process for Items and Customers
+* You can now import Additional Item Numbers and Manufactures
+* Added points to Excel Import for Customers
+* Added Store Accounts for suppliers
+* You can now see individual transactions when making store account payments
+* Added Ability to attach serial numbers to items, which can be chosen at sales interface and have optional unit prices for each serial number
+* Improved performance for reports
+* Virtual Keyboard option for sales/recieving interface for touch screens
+* Improved database migrations for upgrades
+* Accept EBT payments
+* Added Ability to Disable Loyalty points Per Item or Per Customer
+* Added credit limit to customer import for store accounts
+* New filter for Store Account Detailed Report - One or ALL customers
+* New store config option “Use Tax Values At ALL Locations”
+* Re-Organized store config options
+* Added saving tier pricing on suspend sales
+* Added Payments reports for Receivings
+* Added locations filter for Inventory reports so you can make reports across all locations 
+* Made item kits item scannable
+* Added Ability to add Additional Item Numbers to items via excel import
+* Added Manufacture field for items
+* Promo price BULK increase/decrease based on selling price 
+* Added alert when item could not be added to an inventory count
+* Item categories can now have images and colors
+* Added Exp. Dates to Barcode labels if available
+* Allow negative store account payment when item below cost price
+* Added Manufacture to custom report filter
+* Added quantity field on items edit view
+* Added Detailed Inventory Count Report
+* Added Add tag filter to custom report
+* Added Discount Reason Field to sales interface
+* Create PO from Sale when selling out of stock items
+* Improved receiving and Purchase Orders to show item id/product id/UPC
+* Multi-colored tabs for Left Navigation Bar
+* Now supports IP Tran for credit processing from any device (Mercury/Vantiv AND Heartland)
+* Multiple Payment types for receivings
+* Added Payment reports for Recievings
+* It is now possible to edit a incorrect drawer counts
+* You can now update item Selling Price when receiving items
+* Easier seaching for store config options with updated search function
+* Added store configuration option "Remove Commission From Profit In Reports"
+* Added store configuration option "Remove Points Redemption From Profit"
+* Added store configuration option "Show Original Price On Receipt If Marked Down"
+* Added store configuration options to change (auto increment) of ID numbers
+* Added store configuration section for configuring application email settings
+* Added store configuration option for “Override Layaway Name”
+* Added store configuration option “Do Not Force HTTP When Needed For EMV Credit Card Processing”
+* Added store configuration option “Log Out Automatically When Clocking Out”
+* Added store configuration option “Remove Customer Name From Receipt”
+* Added store configuration option “Default Tier Percent Type for excel import”
+* Added store configuration option “Loyalty Points Earned Not Including Tax”
+* Added store configuration option “Currency Symbol Location”
+* Added store configuration option "Capture signature for all sales"
+* Added store configuration option "Hide Description On Receipt"
+* Added "Always Require Password When Switching User" to Employee
+* Modified store configuration option to "Enable quick edit on manage pages"
+* Moved store config option “Show Dashboard Statistics” to employee reports permission
+* Added employee permission for Editing employee profile
+* You can now toggle show item description on receipt on per item basis
+* Added ability to see gift cards a customer has on file during sale (And reemem)
+* Added store configuration option "Confirm Error Messages Using Modal Dialogs" on sales screen to catch mistakes
+* Can now edit an incorrect drawer count if mistake is made
+* Added filter to summary items report to show all items if they don't have sales
+* Can now have different company name, logo, and web site per location (optional)
+* Can disable fast user switching on a per employee basis
+* Fixed bug in mutli language environments were payment types were NOT grouped
+* You can now timeout login session in as little as 10 minutes (prev was an hour)
+* Can now import and export via excel/csv faster (requires php 5.4.0 or greater)
+* Inventory reports now can be run for a specific date
+* Tweaked receipt format to allow for larger numbers and better display
+* Fixed bug where payment types would not display in correct language if in multi language environment
+* Fixed bug when editing sale with gift card payment where profit is calculated incorrectly
+* Closeout report now has opening/closing employee for cash tracking
+* Closeout report can be for any date range
+* Closeout report now removes discounts from returns and displays as own section
+* Added Price variance report for items and item kits
+* Added the ability to have tier prices based on cost plus percent on per item basis
+* Added store configuration option "Default Tier Percent Type For Excel Import"
+* find available gift cards for given customer and easily add them to a sale 
+* Cash tracking now shows previous closing amount when opening register
+* Sales now Track Original price to show dollar value discount
+* When searching you can now select all results
+* floating submit button for all forms
+* Added Global Tier pricing option
+* Better giftcard sales tracking with date sold
+* Quickbooks integration (beta)
+* We now prompt to use points if available when selecting customer when advanced loyalty system enabled
+* Added worldpay Integration
+* CI 3.1.4 upgrade
+* Minor bug fixes and enhancements
